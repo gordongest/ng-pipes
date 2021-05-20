@@ -11,6 +11,11 @@ export class AppComponent {
   amount: number = 0;
   height: number = 0;
 
+  car = {
+    make: 'Toyota',
+    model: 'RAV4'
+  }
+
   onNameChange(val: string) {
     this.payeeName = val;
   }
