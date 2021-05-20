@@ -16,6 +16,8 @@ export class AppComponent {
     model: 'RAV4'
   }
 
+  miles: number = 0;
+
   onNameChange(val: string) {
     this.payeeName = val;
   }
@@ -30,5 +32,9 @@ export class AppComponent {
 
   onHeightChange(val: string) {
     this.height = parseFloat(val);
+  }
+
+  onDistanceChange(val: string) {
+    this.miles = parseFloat(val);
   }
 }
