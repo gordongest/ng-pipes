@@ -2,6 +2,7 @@
   <h3>Payment Form</h3>
 
   <div class="row">
+
     <div class="form-group col">
       <label>Payee Name</label>
       <input class="form-control" #nameInput (input)="onNameChange(nameInput.value)" />
@@ -17,6 +18,7 @@
   </div>
 
   <div class="row">
+
     <div class="form-group col">
       <label>Payment Date</label>
       <input type="date" class="form-control" #dateInput (input)="onDateChange(dateInput.value)" />
@@ -32,6 +34,7 @@
   </div>
 
   <div class="row">
+
     <div class="form-group col">
       <label>Payment Amount</label>
       <input type="number" class="form-control" #amountInput (input)="onAmountChange(amountInput.value)" />
@@ -45,5 +48,21 @@
     </div>
 
   </div>
-</div>
 
+  <div class="row">
+
+    <div class="form-group col">
+      <label>Height</label>
+      <input type="number" class="form-control" #heightInput (input)="onHeightChange(heightInput.value)" />
+    </div>
+
+    <div class="col">
+      <label for=""><b>Height</b></label>
+      <div>
+        {{ height | number: "1.0-9" }}
+      </div>
+    </div>
+
+  </div>
+
+</div>
