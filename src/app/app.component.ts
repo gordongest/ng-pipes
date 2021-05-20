@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   payeeName: string = '';
-  date: string = '';
+  paymentDate: string = '';
 
   onNameChange(val: string) {
     this.payeeName = val;
   }
 
   onDateChange(val: string) {
-    this.date = val;
+    this.paymentDate = val;
   }
 }
