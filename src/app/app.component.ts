@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   payeeName: string = '';
   paymentDate: string = '';
+  amount: number = 0;
 
   onNameChange(val: string) {
     this.payeeName = val;
@@ -15,5 +16,9 @@ export class AppComponent {
 
   onDateChange(val: string) {
     this.paymentDate = val;
+  }
+
+  onAmountChange(val: string) {
+    this.amount = parseFloat(val);
   }
 }

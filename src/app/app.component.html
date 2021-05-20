@@ -30,5 +30,20 @@
     </div>
 
   </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Payment Amount</label>
+      <input type="number" class="form-control" #amountInput (input)="onAmountChange(amountInput.value)" />
+    </div>
+
+    <div class="col">
+      <label for=""><b>Payment Amount</b></label>
+      <div>
+        {{ amount }}
+      </div>
+    </div>
+
+  </div>
 </div>
 
